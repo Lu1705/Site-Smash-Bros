@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    z-index: 2;
+}
+
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #17085a;
+}
+
+.titre{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1{
+    color: #fff;
+}
+
+.burger-icon{
+    cursor: pointer; 
+}
+
+.bar{
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    margin: 12px 0;
+    transition: 0.4s;
+    display: flex;
+}
+
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 13vw;
+    background-color: #17085a;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #17085a;
+    text-align: center;
+}
+
+.invit{
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Caroussel*/
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+swiper-container {
+    width: 80%;
+    height: 80%;
+}
+
+swiper-slide {
+    text-align: end;
+    font-size: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+img{
+    box-sizing: border-box;
+}
+
+.image{
+    width: 30%;
+    height: 90%;
+}
+
+.perso{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*
+main{
+    padding-top: 16px;
+    background-color: #17085a;
+    width: 87vw;
+    height: 10vh
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 15px;
+    color: #fff;
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+}
+*/

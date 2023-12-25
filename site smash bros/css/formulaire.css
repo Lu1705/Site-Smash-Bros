@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    z-index: 2;
+}
+
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #17085a;
+    /*nous faisons en sorte que les element du tire soient alligné */
+}
+
+.titre{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1{
+    color: #fff;
+}/*Nous changeons la couleur du titre pour qu'il soit visible sur le fond bleu*/
+
+.burger-icon{
+    cursor: pointer;  
+}/*le curseur va se modifier lorsqu'il survole l'icone*/
+
+.bar{
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    margin: 12px 0;
+    transition: 0.4s;
+    display: flex;
+} /* nous faisons en sorte que les divisions bar aient un background blanc pour faire une icone de menu*/
+
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 13vw;
+    background-color: #17085a;
+} /*création du visuel du menu dépliant*/
+
+main{
+    margin: 40px;
+    padding: 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ddc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.IP{
+    display: flex;
+    justify-content: space-around;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.labelPerso{
+    margin-left: 100px;
+}
+
+#perso{
+    display: flex;
+}
+
+.post-form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}

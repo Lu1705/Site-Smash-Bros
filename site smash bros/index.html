@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="burger-menu"> <!--Nous allons créer une division correspondant au menu burger-->
+
+                <div class="burger-icon" id="burger-icon"> <!-- cette nouvelle division va correspondre à l'icon du menu-->
+                    <div class="bar"></div> 
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                    
+                <h1 class="titre">Little House</h1> <!--Le titre qui sera en plein milieu du site-->
+
+                <button>Darkmode</button> <!--et le bouton qui servira au darkomode-->
+
+                <ul class="menu" id="menu"> <!--nous allons créer les différentes options du menu burger-->
+                    <li><a href="index.html">Acceuil</a></li> <!--nous mettons la balise a car cette option vont rediriger vers d'autres pages-->
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">Joueurs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="formulaire.html">Rejoindre</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <swiper-container class="mySwiper" navigation="true"><!--nous mettons en place notre swiper qui contiendra les différents joueurs-->
+                <swiper-slide>
+                        <img src="img/img smash joeur/noé.jpg" alt="" class="image"> <!--dans chaque slide nous mettons une image du joueur-->
+                        <h3 class="pseudo">Noé</h3> <!--son nom-->
+                    <div class="perso"> <!--et un carousel qui contiendra l'icone des différent personnage joué par le joueur-->
+                        <div class="premierCarousel">
+                        <img id="premierCarousel" src="img/icon smash/CloudHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide> <!--nous mettons en place autant de slide qu'il y a de joueur-->
+                <swiper-slide>
+                    <img src="img/img smash joeur/raphael.jpg" alt="" class="image">
+                    <h3 class="pseudo">Raphael</h3>
+                    <div class="perso">
+                        <div class="deuxiemeCarousel">
+                            <img id="deuxiemeCarousel" src="img/icon smash/Pac-ManHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/romain.jpg" alt="" class="image">
+                    <h3 class="pseudo">Romain</h3>
+                    <div class="perso">
+                        <div class="troisiemeCarousel">
+                            <img id="troisiemeCarousel" src="img/icon smash/KazuyaHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/moi.jpg" alt="" class="image">
+                    <h3 class="pseudo">Lu'</h3>
+                    <div class="perso">
+                        <div class="quatreCarousel">
+                            <img id="quatreCarousel" src="img/icon smash/JigglypuffHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/alexis.jpg" alt="" class="image">
+                    <h3 class="pseudo">Alexis</h3>
+                    <div class="perso">
+                        <div class="cinqCarousel">
+                            <img id="cinqCarousel" src="img/icon smash/TerryHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/jules.jpg" alt="" class="image">
+                    <h3 class="pseudo">Jules</h3>
+                    <div class="perso">
+                        <img src="img/icon smash/GanondorfHeadSSBU.webp" alt="">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/tom.jpg" alt="" class="image">
+                    <h3 class="pseudo">Tom</h3>
+                    <div class="perso">
+                        <div class="sixCarousel">
+                            <img id="sixCarousel" src="img/icon smash/RoyHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/pierre.jpg" alt="" class="image">
+                    <h3 class="pseudo">Pierre</h3>
+                    <div class="perso">
+                        <img src="img/icon smash/MythraHeadSSBU.webp" alt="">
+                        <img src="img/icon smash/PyraHeadSSBU.webp" alt="">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/gabin.jpg" alt="" class="image">
+                    <h3 class="pseudo">Gabin</h3>
+                    <div class="perso">
+                        <div class="septCarousel">
+                            <img id="septCarousel" src="img/icon smash/LinkHeadSSBU.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="img/img smash joeur/antoine.jpg" alt="" class="image">
+                    <h3 class="pseudo">Antoine</h3>
+                <div class="perso">
+                    <div class="huitCarousel">
+                        <img id="huitCarousel" src="img/icon smash/PiranhaPlantHeadSSBU.webp" alt="">
+                    </div>
+                </div>
+            </swiper-slide>
+            </swiper-container>
+        </main>
+        <footer>
+            <a href="formulaire.html" class="invit">Rejoignez nous !!!</a> <!--puis pour finir un lien qui nous dirigera vers un formulaire pour intégrer le little house-->
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
